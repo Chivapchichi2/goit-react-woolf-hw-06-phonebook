@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from '../../store/selectors';
 import { addContact } from '../../store/contactsSlice';
 
-export const ContactForm = ({ onSubmit }) => {
+export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
   const [formData, setFormData] = useState({ name: '', number: '' });
