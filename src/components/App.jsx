@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { getContacts } from '../store/selectors';
 
 export const App = () => {
-  const contacts = useSelector(getContacts) || [];
+  const contacts = useSelector(getContacts);
   return (
     <>
       <h1>Phonebook</h1>
